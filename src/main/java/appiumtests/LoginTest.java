@@ -43,7 +43,7 @@ public class LoginTest {
         //capabilities de la App de Facebook
         cap.setCapability("appPackage", "com.facebook.katana");
         cap.setCapability("appActivity", "com.facebook.katana.LoginActivity");
-        cap.setCapability("adbExecTimeout", 60000); // <-- Aumenta a 60s
+        cap.setCapability("adbExecTimeout", 60000); // <-- Aumenta el tiempo de espera a 60s
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), cap);
         report = new TestReport("LoginTest");
@@ -53,8 +53,8 @@ public class LoginTest {
     @Test(description = "Ingresar a Facebok")
     public void loginFacebook() throws InterruptedException
     {
-        ingresarTelefonoUCorreo("7731570013");
-        ingresarContrasena("quimica11");
+        ingresarTelefonoUCorreo("TuEmailOTelefono");//Remplaza "TuEmailOTelefono" por tu usuario para iniciar sesión
+        ingresarContrasena("TuPassword");//Remplaza "TuPassword" por tu contraseña para iniciar sesión
         darClickEnIniciarSesion();
         esperarDashboardPrincipal();
     }

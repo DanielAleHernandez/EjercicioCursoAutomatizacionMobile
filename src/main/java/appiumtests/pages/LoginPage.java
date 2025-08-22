@@ -23,6 +23,7 @@ public class LoginPage
     private  final By btnIniciarSesion = By.xpath("//android.view.View[@content-desc=\"Iniciar sesión\"]");
     private final By dashboardPrincipalFB = By.xpath("(//android.widget.FrameLayout[@resource-id=\"android:id/content\"])[2]");
     private final By estasPensando = By.xpath("//android.view.ViewGroup[@content-desc=\"Haz una publicación en Facebook\"]");
+
     /**
      * Ingresa el texto de correo electronico.
      *
@@ -49,7 +50,7 @@ public class LoginPage
     }
 
     /**
-    * Hace clic en el botón de búsqueda.
+    * Hace clic en el botón de iniciar sesion.
     */
     public void clickButtonIniciarSesion()
     {
@@ -66,7 +67,7 @@ public class LoginPage
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         //wait.until(ExpectedConditions.visibilityOfElementLocated(dashboardPrincipalFB));
         try {
-            // Espera a que el icono Home esté visible
+            // Espera a que el elemnto estasPensando este visible
             WebElement dashboard = wait.until(
                     ExpectedConditions.visibilityOfElementLocated(estasPensando)
             );
