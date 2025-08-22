@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AppiumTestsSuite" verbose="1">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="appiumtests.utils.TestListener"/>
+    </listeners>
+
+
+    <test name="XiaomiSettingsTests">
+        <classes>
+            <class name="appiumtests.LoginTest"/>
+        </classes>
+    </test>
+</suite>

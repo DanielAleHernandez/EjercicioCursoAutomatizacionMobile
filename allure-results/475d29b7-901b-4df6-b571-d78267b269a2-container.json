@@ -1,0 +1,1 @@
+{"uuid":"475d29b7-901b-4df6-b571-d78267b269a2","name":"appiumtests.LoginTest.setUp","children":["d346b99d-b3a5-42d3-8306-4ab40f62069a"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1755888019673,"stop":1755888030694}],"afters":[],"start":1755888019671,"stop":1755888030695}
